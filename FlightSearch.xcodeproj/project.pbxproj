@@ -12,7 +12,7 @@
 		42F1728122011DF4000BEF98 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F1727722011DF4000BEF98 /* HomeViewController.swift */; };
 		42F1728522011DF4000BEF98 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42F1727B22011DF4000BEF98 /* HomeViewController.xib */; };
 		42F1728622011DF4000BEF98 /* HomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F1727C22011DF4000BEF98 /* HomeWireframe.swift */; };
-		42F1728922012DC2000BEF98 /* LightNavigationBarTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F1728822012DC2000BEF98 /* LightNavigationBarTheme.swift */; };
+		42F1728C220141E7000BEF98 /* FSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F1728B220141E7000BEF98 /* FSTextField.swift */; };
 		52044D8020E0431C00D6C94C /* MainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52044D7F20E0431C00D6C94C /* MainUITests.swift */; };
 		524AF9FB20DD1AB5005D4CEC /* FlightSearchApiModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524AF9FA20DD1AB5005D4CEC /* FlightSearchApiModelProtocol.swift */; };
 		5279599020DC78CF00D3C13D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5279598F20DC78CF00D3C13D /* AppDelegate.swift */; };
@@ -59,7 +59,7 @@
 		42F1727722011DF4000BEF98 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		42F1727B22011DF4000BEF98 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		42F1727C22011DF4000BEF98 /* HomeWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireframe.swift; sourceTree = "<group>"; };
-		42F1728822012DC2000BEF98 /* LightNavigationBarTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightNavigationBarTheme.swift; sourceTree = "<group>"; };
+		42F1728B220141E7000BEF98 /* FSTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTextField.swift; sourceTree = "<group>"; };
 		52044D7F20E0431C00D6C94C /* MainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUITests.swift; sourceTree = "<group>"; };
 		524AF9FA20DD1AB5005D4CEC /* FlightSearchApiModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchApiModelProtocol.swift; sourceTree = "<group>"; };
 		5279598C20DC78CF00D3C13D /* FlightSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +124,14 @@
 				42F1727C22011DF4000BEF98 /* HomeWireframe.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		42F1728A22014143000BEF98 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				42F1728B220141E7000BEF98 /* FSTextField.swift */,
+			);
+			path = UITextField;
 			sourceTree = "<group>";
 		};
 		5279598320DC78CF00D3C13D = {
@@ -242,6 +250,7 @@
 		527959C820DC7FEE00D3C13D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				42F1728A22014143000BEF98 /* UITextField */,
 				527959C920DC7FFD00D3C13D /* VIPER */,
 				527959EA20DC8B0400D3C13D /* Extensions */,
 			);
@@ -264,7 +273,6 @@
 			children = (
 				527959D520DC820900D3C13D /* BaseNavigationController.swift */,
 				527959D320DC81C200D3C13D /* BaseRouter.swift */,
-				42F1728822012DC2000BEF98 /* LightNavigationBarTheme.swift */,
 			);
 			path = BaseRouter;
 			sourceTree = "<group>";
@@ -485,10 +493,10 @@
 				42F1728022011DF4000BEF98 /* HomePresenter.swift in Sources */,
 				42F1728122011DF4000BEF98 /* HomeViewController.swift in Sources */,
 				527959F820DD064B00D3C13D /* BaseResponse.swift in Sources */,
-				42F1728922012DC2000BEF98 /* LightNavigationBarTheme.swift in Sources */,
 				527959EC20DC8B1900D3C13D /* String.swift in Sources */,
 				5279599020DC78CF00D3C13D /* AppDelegate.swift in Sources */,
 				527959F520DC967600D3C13D /* FlightSearchAPIInteractor.swift in Sources */,
+				42F1728C220141E7000BEF98 /* FSTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
