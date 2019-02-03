@@ -24,14 +24,15 @@ class BSNavigationController: UINavigationController {
   
   // MARK: - Properties
   
-  override var preferredStatusBarStyle: UIStatusBarStyle {
-    let defaultBarStyle: UIStatusBarStyle = .lightContent
-    if let vc = viewControllers.last as? StatusBarTheme {
-      return vc.navigationStatusBarStyle ?? defaultBarStyle
-    }
-    return defaultBarStyle
-  }
-  
+//  override var preferredStatusBarStyle: UIStatusBarStyle {
+//    let defaultBarStyle: UIStatusBarStyle = .lightContent
+//    if let vc = viewControllers.last as? StatusBarTheme {
+//      return vc.navigationStatusBarStyle ?? defaultBarStyle
+//    }
+//    return defaultBarStyle
+//  }
+
+
   // MARK: - Private
   override open var childViewControllerForStatusBarStyle: UIViewController? {
     return self.topViewController

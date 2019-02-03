@@ -22,15 +22,24 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2tu-ls-RVn">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="9bN-Rt-25p">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
+                        </imageView>
+                    </subviews>
                     <color key="backgroundColor" red="0.10196078431372549" green="0.73725490196078436" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
+                        <constraint firstAttribute="trailing" secondItem="9bN-Rt-25p" secondAttribute="trailing" id="Bnm-yC-sQf"/>
+                        <constraint firstAttribute="bottom" secondItem="9bN-Rt-25p" secondAttribute="bottom" id="Qsj-Ux-eD6"/>
+                        <constraint firstItem="9bN-Rt-25p" firstAttribute="leading" secondItem="2tu-ls-RVn" secondAttribute="leading" id="WZ4-nw-bWn"/>
                         <constraint firstAttribute="height" constant="138" id="gC5-vP-qjo"/>
+                        <constraint firstItem="9bN-Rt-25p" firstAttribute="top" secondItem="2tu-ls-RVn" secondAttribute="top" id="ocx-cy-gef"/>
                     </constraints>
                 </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Axv-Dv-y42">
                     <rect key="frame" x="19" y="158" width="376" height="350"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="IATA Origem" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tyn-j9-JDi">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="IATA Origem" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tyn-j9-JDi" customClass="FSTextField" customModule="FlightSearch" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="376" height="54"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="54" id="4Fg-oa-m7c"/>
@@ -38,43 +47,67 @@
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="icon" value="pin"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowSize">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="IATA Destino" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SLi-mS-Kfg">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="IATA Destino" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SLi-mS-Kfg" customClass="FSTextField" customModule="FlightSearch" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="74" width="376" height="54"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="icon" value="pin"/>
+                            </userDefinedRuntimeAttributes>
                         </textField>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qZg-87-tho">
                             <rect key="frame" x="0.0" y="148" width="376" height="54"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data da ida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AmZ-CF-az7">
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data da ida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AmZ-CF-az7" customClass="FSTextField" customModule="FlightSearch" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="180.5" height="54"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="icon" value="calendario"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="digitMask" value="##/##/####"/>
+                                    </userDefinedRuntimeAttributes>
                                 </textField>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data da volta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MSW-hZ-nH3">
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data da volta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MSW-hZ-nH3" customClass="FSTextField" customModule="FlightSearch" customModuleProvider="target">
                                     <rect key="frame" x="195.5" y="0.0" width="180.5" height="54"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="icon" value="calendario"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="digitMask" value="##/##/####"/>
+                                    </userDefinedRuntimeAttributes>
                                 </textField>
                             </subviews>
                         </stackView>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantidade de passageiros" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2eC-Gy-jc8">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantidade de passageiros" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2eC-Gy-jc8" customClass="FSTextField" customModule="FlightSearch" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="222" width="376" height="54"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="icon" value="passageiros"/>
+                            </userDefinedRuntimeAttributes>
                         </textField>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ej2-8C-LKO">
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ej2-8C-LKO" customClass="FSButton" customModule="FlightSearch" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="296" width="376" height="54"/>
                             <color key="backgroundColor" red="0.10196078431372549" green="0.73725490196078436" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                            <state key="normal" title="Pesquisar passagem">
+                            <state key="normal" title="Pesquisar passagem" image="lupa">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </button>
                     </subviews>
                 </stackView>
@@ -86,10 +119,16 @@
                 <constraint firstItem="2tu-ls-RVn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="MfN-LQ-pab"/>
                 <constraint firstAttribute="trailing" secondItem="2tu-ls-RVn" secondAttribute="trailing" id="Pke-w3-vUo"/>
                 <constraint firstItem="Et9-Dx-DVY" firstAttribute="trailing" secondItem="Axv-Dv-y42" secondAttribute="trailing" constant="19" id="SwU-nh-ZdC"/>
-                <constraint firstItem="Et9-Dx-DVY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Axv-Dv-y42" secondAttribute="bottom" constant="258" id="nZq-GU-YIC"/>
                 <constraint firstItem="Axv-Dv-y42" firstAttribute="top" secondItem="2tu-ls-RVn" secondAttribute="bottom" constant="20" id="zya-Jp-42j"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Et9-Dx-DVY"/>
         </view>
     </objects>
+    <resources>
+        <image name="banner" width="375" height="138"/>
+        <image name="calendario" width="22" height="19"/>
+        <image name="lupa" width="13" height="13"/>
+        <image name="passageiros" width="22" height="19"/>
+        <image name="pin" width="22" height="19"/>
+    </resources>
 </document>

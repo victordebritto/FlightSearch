@@ -23,11 +23,19 @@ final class HomeViewController: UIViewController {
     self.viewConfiguration()
   }
   
+  override var preferredStatusBarStyle: UIStatusBarStyle {
+    get {
+      return .lightContent
+    }
+  }
+  
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     self.navigationController?.setNavigationBarHidden(true, animated: animated)
     
   }
+  
+
   
   override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated)
