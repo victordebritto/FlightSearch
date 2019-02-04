@@ -12,6 +12,12 @@ final class HomeViewController: UIViewController {
   
   // MARK: - Outlets
   
+  @IBOutlet weak var iataSource: FSTextField!
+  @IBOutlet weak var iataDestination: FSTextField!
+  @IBOutlet weak var dateOfDeparture: FSTextField!
+  @IBOutlet weak var dateOfArrival: FSTextField!
+  @IBOutlet weak var countPeople: FSTextField!
+  
   // MARK: - Class properties
   
   // MARK: - Public properties  
@@ -61,6 +67,13 @@ final class HomeViewController: UIViewController {
   // MARK: - Class Methods
   
   // MARK: - UIActions
+  @IBAction func search(_ sender: Any) {
+    presenter.search(iataSource: iataSource.text ?? "",
+                     iataDestination: iataDestination.text ?? "",
+                     dateOfDeparture: dateOfDeparture.text ?? "",
+                     dateOfArrival: dateOfArrival.text ?? "",
+                     countPeople: countPeople.text ?? "")
+  }
   
 }
 

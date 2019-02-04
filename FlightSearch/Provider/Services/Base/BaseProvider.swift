@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 
 typealias BaseSuccessCallback = (_ data: AnyObject?) -> Swift.Void
 typealias BaseFailureCallback = (_ error: Error?) -> Swift.Void
@@ -30,7 +31,7 @@ internal class BaseProvider {
   }
   
   // MARK: Bureau
-  fileprivate static let kURL = "http://%@"
+  fileprivate static let kURL = "http://developer.goibibo.com/api%@"
   
   // MARK: - Methods
   
@@ -43,18 +44,15 @@ internal class BaseProvider {
     switch method {
     case .get:
       if let url = urlString {
-        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-          DispatchQueue.main.async {
-            if error != nil {              
-              failureBlock(error)
-            } else {
-              if let usableData = data {
-                successBlock(usableData as AnyObject)
-              }
-            }
+        Alamofire.request(url, method: .get, parameters: params)
+          .validate(statusCode: 200..<300)
+          .validate(contentType: ["application/json"])
+          .responseJSON { response in
+            print(response)
           }
-        }
-        task.resume()
+//          .response {resp in
+//            print(resp)
+//          }
       }
     case .post:
       NSLog("%@", "No Service POST")

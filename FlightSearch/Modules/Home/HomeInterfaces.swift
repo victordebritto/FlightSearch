@@ -17,4 +17,6 @@ protocol HomeWireframeInterface: WireframeInterface {
 
 protocol HomeViewInterface: ViewInterface { }
 
-protocol HomePresenterInterface: PresenterInterface { }
+protocol HomePresenterInterface: PresenterInterface {
+  func search(iataSource: String, iataDestination: String, dateOfDeparture: String, dateOfArrival: String, countPeople: String)
+}

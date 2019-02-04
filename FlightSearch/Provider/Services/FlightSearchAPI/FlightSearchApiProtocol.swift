@@ -9,7 +9,7 @@
 import Foundation
 
 protocol FlightSearchApiProtocol {
-  func getSome(with address: String,sensor: String,
-                         success: @escaping BaseSuccessCallback,
-                         failure: @escaping BaseFailureCallback)
+  func getSome(params: [String: Any],
+               success: @escaping BaseSuccessCallback,
+               failure: @escaping BaseFailureCallback)
 }

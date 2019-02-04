@@ -15,13 +15,46 @@ final class HomePresenter {
   private weak var view: HomeViewInterface?
   private let wireframe: HomeWireframeInterface
   
+  private let interactorSearch: FlightSearchInteractorProtocol
+  
   // MARK: - Lifecycle
   init(wireframe: HomeWireframeInterface,
-       view: HomeViewInterface) {
+       view: HomeViewInterface,
+       interactor: FlightSearchInteractorProtocol) {
     self.wireframe = wireframe
     self.view = view
+    self.interactorSearch = interactor
   }
 }
 
 // MARK: - Extensions
-extension HomePresenter: HomePresenterInterface { }
+extension HomePresenter: HomePresenterInterface {
+  
+  func search(iataSource: String, iataDestination: String, dateOfDeparture: String, dateOfArrival: String, countPeople: String) {
+    
+    if let departure = dateOfDeparture.date(withFormat: "dd/MM/yyyy"),
+       let arrival = dateOfArrival.date(withFormat: "dd/MM/yyyy"),
+       let adults = Int(countPeople) {
+      
+      let parameters = FlightSearch(source: iataSource,
+                                    destination: iataDestination,
+                                    dateofdeparture:  departure,
+                                    dateofarrival: arrival,
+                                    adults: adults)
+      
+      interactorSearch.search(parameters: parameters)
+    }
+  }
+}
+
+extension HomePresenter: FlightSearchInteractorResponseProtocol {
+  func responseSearchSuccess(_ response: String) {
+    print(response)
+  }
+  
+  func responseSearchError() {
+    
+  }
+  
+  
+}

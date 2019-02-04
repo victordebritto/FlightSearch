@@ -12,6 +12,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="FlightSearch" customModuleProvider="target">
             <connections>
+                <outlet property="countPeople" destination="2eC-Gy-jc8" id="ClZ-2V-pj9"/>
+                <outlet property="dateOfArrival" destination="MSW-hZ-nH3" id="EB4-Ba-Kf9"/>
+                <outlet property="dateOfDeparture" destination="AmZ-CF-az7" id="Xa7-zP-2Ek"/>
+                <outlet property="iataDestination" destination="SLi-mS-Kfg" id="NhQ-q2-YKM"/>
+                <outlet property="iataSource" destination="Tyn-j9-JDi" id="WMQ-h2-vDQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -92,7 +97,7 @@
                             <rect key="frame" x="0.0" y="222" width="376" height="54"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="image" keyPath="icon" value="passageiros"/>
                             </userDefinedRuntimeAttributes>
@@ -108,6 +113,9 @@
                                     <real key="value" value="4"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="search:" destination="-1" eventType="touchUpInside" id="6H8-Oz-Cyt"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>

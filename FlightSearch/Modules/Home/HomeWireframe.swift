@@ -16,7 +16,11 @@ final class HomeWireframe: BaseWireframe {
   
   // MARK: - Module setup
   func configureModule(with viewController: HomeViewController) {
-    let presenter = HomePresenter(wireframe: self, view: viewController)
+    
+    let interactor = FlightSearchInteractor(provider: FlightSearchApiProvider.search)
+    let presenter = HomePresenter(wireframe: self, view: viewController, interactor: interactor)
+    
+    interactor.response = presenter
     viewController.presenter = presenter
   }
   

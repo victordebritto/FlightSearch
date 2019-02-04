@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4291F0292206BD5000A867E6 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4291F0282206BD5000A867E6 /* Keys.swift */; };
+		4291F02C2206C16100A867E6 /* FlightSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4291F02B2206C16100A867E6 /* FlightSearch.swift */; };
+		4291F02F2206CC8100A867E6 /* FlightSearchInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4291F02E2206CC8100A867E6 /* FlightSearchInteractorProtocol.swift */; };
+		4291F0312206CC8E00A867E6 /* FlightSearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4291F0302206CC8E00A867E6 /* FlightSearchInteractor.swift */; };
 		42F1727E22011DF4000BEF98 /* HomeInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F1727422011DF4000BEF98 /* HomeInterfaces.swift */; };
 		42F1728022011DF4000BEF98 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F1727622011DF4000BEF98 /* HomePresenter.swift */; };
 		42F1728122011DF4000BEF98 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F1727722011DF4000BEF98 /* HomeViewController.swift */; };
@@ -31,8 +35,6 @@
 		527959EC20DC8B1900D3C13D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527959EB20DC8B1900D3C13D /* String.swift */; };
 		527959EE20DC8BD500D3C13D /* FlightSearchApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527959ED20DC8BD500D3C13D /* FlightSearchApiProvider.swift */; };
 		527959F020DC8E0700D3C13D /* FlightSearchApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527959EF20DC8E0700D3C13D /* FlightSearchApiProtocol.swift */; };
-		527959F320DC966A00D3C13D /* FlightSearchAPIInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527959F220DC966A00D3C13D /* FlightSearchAPIInteractorProtocol.swift */; };
-		527959F520DC967600D3C13D /* FlightSearchAPIInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527959F420DC967600D3C13D /* FlightSearchAPIInteractor.swift */; };
 		527959F820DD064B00D3C13D /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527959F720DD064B00D3C13D /* BaseResponse.swift */; };
 		527959FB20DD06D500D3C13D /* FlightSearchApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527959FA20DD06D500D3C13D /* FlightSearchApiModel.swift */; };
 		A78AD4926F34541A18FCE34D /* Pods_FlightSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3810547243D10F8386C8C4F3 /* Pods_FlightSearch.framework */; };
@@ -61,6 +63,10 @@
 		25500911437FE6D10F2909EC /* Pods-FlightSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlightSearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-FlightSearchUITests/Pods-FlightSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3810547243D10F8386C8C4F3 /* Pods_FlightSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlightSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C32A66DCE4AC7FC2995883A /* Pods-FlightSearchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlightSearchUITests.release.xcconfig"; path = "Target Support Files/Pods-FlightSearchUITests/Pods-FlightSearchUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4291F0282206BD5000A867E6 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		4291F02B2206C16100A867E6 /* FlightSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearch.swift; sourceTree = "<group>"; };
+		4291F02E2206CC8100A867E6 /* FlightSearchInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchInteractorProtocol.swift; sourceTree = "<group>"; };
+		4291F0302206CC8E00A867E6 /* FlightSearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchInteractor.swift; sourceTree = "<group>"; };
 		42F1727422011DF4000BEF98 /* HomeInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInterfaces.swift; sourceTree = "<group>"; };
 		42F1727622011DF4000BEF98 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		42F1727722011DF4000BEF98 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -92,8 +98,6 @@
 		527959EB20DC8B1900D3C13D /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		527959ED20DC8BD500D3C13D /* FlightSearchApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchApiProvider.swift; sourceTree = "<group>"; };
 		527959EF20DC8E0700D3C13D /* FlightSearchApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchApiProtocol.swift; sourceTree = "<group>"; };
-		527959F220DC966A00D3C13D /* FlightSearchAPIInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchAPIInteractorProtocol.swift; sourceTree = "<group>"; };
-		527959F420DC967600D3C13D /* FlightSearchAPIInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchAPIInteractor.swift; sourceTree = "<group>"; };
 		527959F720DD064B00D3C13D /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		527959FA20DD06D500D3C13D /* FlightSearchApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchApiModel.swift; sourceTree = "<group>"; };
 		5A2F0856DB4B85DA198EEB9A /* Pods-FlightSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlightSearch.release.xcconfig"; path = "Target Support Files/Pods-FlightSearch/Pods-FlightSearch.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +143,31 @@
 				D4E048D72FC376C707BD2FB9 /* Pods_FlightSearchUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4291F0272206BD3A00A867E6 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				4291F0282206BD5000A867E6 /* Keys.swift */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		4291F02A2206C14400A867E6 /* FlightSearch */ = {
+			isa = PBXGroup;
+			children = (
+				4291F02B2206C16100A867E6 /* FlightSearch.swift */,
+			);
+			path = FlightSearch;
+			sourceTree = "<group>";
+		};
+		4291F02D2206CC5700A867E6 /* FlightSearch */ = {
+			isa = PBXGroup;
+			children = (
+				4291F02E2206CC8100A867E6 /* FlightSearchInteractorProtocol.swift */,
+				4291F0302206CC8E00A867E6 /* FlightSearchInteractor.swift */,
+			);
+			path = FlightSearch;
 			sourceTree = "<group>";
 		};
 		42F1727322011D88000BEF98 /* Home */ = {
@@ -228,6 +257,7 @@
 		527959C020DC790800D3C13D /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				4291F0272206BD3A00A867E6 /* Security */,
 				527959C120DC793700D3C13D /* AppDelegate */,
 			);
 			path = Infrastructure;
@@ -270,6 +300,7 @@
 		527959C520DC7B1E00D3C13D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4291F02A2206C14400A867E6 /* FlightSearch */,
 				527959F920DD06C000D3C13D /* FlightSearchAPIModel */,
 				527959F620DD063300D3C13D /* Base */,
 			);
@@ -318,7 +349,7 @@
 		527959E420DC87C400D3C13D /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				527959F120DC962D00D3C13D /* FlightSearchAPI */,
+				4291F02D2206CC5700A867E6 /* FlightSearch */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -357,15 +388,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		527959F120DC962D00D3C13D /* FlightSearchAPI */ = {
-			isa = PBXGroup;
-			children = (
-				527959F220DC966A00D3C13D /* FlightSearchAPIInteractorProtocol.swift */,
-				527959F420DC967600D3C13D /* FlightSearchAPIInteractor.swift */,
-			);
-			path = FlightSearchAPI;
-			sourceTree = "<group>";
-		};
 		527959F620DD063300D3C13D /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -393,7 +415,6 @@
 				25500911437FE6D10F2909EC /* Pods-FlightSearchUITests.debug.xcconfig */,
 				3C32A66DCE4AC7FC2995883A /* Pods-FlightSearchUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -625,17 +646,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4291F0312206CC8E00A867E6 /* FlightSearchInteractor.swift in Sources */,
 				527959D620DC820900D3C13D /* BaseNavigationController.swift in Sources */,
+				4291F02C2206C16100A867E6 /* FlightSearch.swift in Sources */,
 				527959D020DC803C00D3C13D /* ViewInterface.swift in Sources */,
 				524AF9FB20DD1AB5005D4CEC /* FlightSearchApiModelProtocol.swift in Sources */,
 				527959CF20DC803C00D3C13D /* PresenterInterface.swift in Sources */,
+				4291F02F2206CC8100A867E6 /* FlightSearchInteractorProtocol.swift in Sources */,
+				4291F0292206BD5000A867E6 /* Keys.swift in Sources */,
 				527959D420DC81C200D3C13D /* BaseRouter.swift in Sources */,
 				527959CE20DC803C00D3C13D /* InteractorInterface.swift in Sources */,
 				527959F020DC8E0700D3C13D /* FlightSearchApiProtocol.swift in Sources */,
 				527959D120DC803C00D3C13D /* BaseWireframe.swift in Sources */,
 				527959FB20DD06D500D3C13D /* FlightSearchApiModel.swift in Sources */,
 				527959EE20DC8BD500D3C13D /* FlightSearchApiProvider.swift in Sources */,
-				527959F320DC966A00D3C13D /* FlightSearchAPIInteractorProtocol.swift in Sources */,
 				527959E820DC898400D3C13D /* BaseProvider.swift in Sources */,
 				42F1727E22011DF4000BEF98 /* HomeInterfaces.swift in Sources */,
 				42F1728622011DF4000BEF98 /* HomeWireframe.swift in Sources */,
@@ -645,7 +669,6 @@
 				527959F820DD064B00D3C13D /* BaseResponse.swift in Sources */,
 				527959EC20DC8B1900D3C13D /* String.swift in Sources */,
 				5279599020DC78CF00D3C13D /* AppDelegate.swift in Sources */,
-				527959F520DC967600D3C13D /* FlightSearchAPIInteractor.swift in Sources */,
 				42F1728C220141E7000BEF98 /* FSTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

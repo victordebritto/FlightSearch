@@ -11,20 +11,20 @@ import Foundation
 enum FlightSearchApiProvider {
   
   // MARK: - Cases
-  case FlightSearchApi
+  case search
   
   // MARK: - Path
-  private var path: String {
+  private var endPoint: String {
     switch self {
-    case .FlightSearchApi:
-      return "site.com/api/xpto?query"
+    case .search:
+      return "/search"
     }
   }
   
   // MARK: - Methods
   private var method: HTTPMethod {
     switch self {
-    case .FlightSearchApi:
+    case .search:
       return .get
     }
   }
@@ -33,11 +33,9 @@ enum FlightSearchApiProvider {
 
 // MARK: - Extensions
 extension FlightSearchApiProvider: FlightSearchApiProtocol {
-  func getSome(with address: String, sensor: String, success: @escaping BaseSuccessCallback, failure: @escaping BaseFailureCallback) {
+  func getSome(params: [String: Any], success: @escaping BaseSuccessCallback, failure: @escaping BaseFailureCallback) {
     
-    let completePath = String(format: path, address, sensor)
-    
-    BaseProvider().request(method: method, endPoint: completePath, params: nil, successBlock: { response in      
+    BaseProvider().request(method: method, endPoint: endPoint, params: params, successBlock: { response in
       success(response)
     }) { error in
       failure(error)
