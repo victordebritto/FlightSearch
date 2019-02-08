@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     if launchOptions == nil {
       mainBaseRouter().initRouter()
     }
+    IQKeyboardManager.sharedManager().enable = true//shared.enable = true
     
     return true
   }

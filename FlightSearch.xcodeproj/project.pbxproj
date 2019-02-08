@@ -11,6 +11,14 @@
 		4291F02C2206C16100A867E6 /* FlightSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4291F02B2206C16100A867E6 /* FlightSearch.swift */; };
 		4291F02F2206CC8100A867E6 /* FlightSearchInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4291F02E2206CC8100A867E6 /* FlightSearchInteractorProtocol.swift */; };
 		4291F0312206CC8E00A867E6 /* FlightSearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4291F0302206CC8E00A867E6 /* FlightSearchInteractor.swift */; };
+		42D3C637220D288600658C34 /* ResultInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3C62D220D288600658C34 /* ResultInterfaces.swift */; };
+		42D3C639220D288600658C34 /* ResultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3C62F220D288600658C34 /* ResultPresenter.swift */; };
+		42D3C63A220D288600658C34 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3C630220D288600658C34 /* ResultViewController.swift */; };
+		42D3C63C220D288600658C34 /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3C632220D288600658C34 /* ResultModel.swift */; };
+		42D3C63E220D288600658C34 /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D3C634220D288600658C34 /* ResultViewController.xib */; };
+		42D3C63F220D288600658C34 /* ResultWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3C635220D288600658C34 /* ResultWireframe.swift */; };
+		42D3C644220D36F500658C34 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3C642220D36F500658C34 /* ResultTableViewCell.swift */; };
+		42D3C645220D36F500658C34 /* ResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D3C643220D36F500658C34 /* ResultTableViewCell.xib */; };
 		42F1727E22011DF4000BEF98 /* HomeInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F1727422011DF4000BEF98 /* HomeInterfaces.swift */; };
 		42F1728022011DF4000BEF98 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F1727622011DF4000BEF98 /* HomePresenter.swift */; };
 		42F1728122011DF4000BEF98 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F1727722011DF4000BEF98 /* HomeViewController.swift */; };
@@ -67,6 +75,14 @@
 		4291F02B2206C16100A867E6 /* FlightSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearch.swift; sourceTree = "<group>"; };
 		4291F02E2206CC8100A867E6 /* FlightSearchInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchInteractorProtocol.swift; sourceTree = "<group>"; };
 		4291F0302206CC8E00A867E6 /* FlightSearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchInteractor.swift; sourceTree = "<group>"; };
+		42D3C62D220D288600658C34 /* ResultInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultInterfaces.swift; sourceTree = "<group>"; };
+		42D3C62F220D288600658C34 /* ResultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPresenter.swift; sourceTree = "<group>"; };
+		42D3C630220D288600658C34 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		42D3C632220D288600658C34 /* ResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultModel.swift; sourceTree = "<group>"; };
+		42D3C634220D288600658C34 /* ResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultViewController.xib; sourceTree = "<group>"; };
+		42D3C635220D288600658C34 /* ResultWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultWireframe.swift; sourceTree = "<group>"; };
+		42D3C642220D36F500658C34 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
+		42D3C643220D36F500658C34 /* ResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultTableViewCell.xib; sourceTree = "<group>"; };
 		42F1727422011DF4000BEF98 /* HomeInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInterfaces.swift; sourceTree = "<group>"; };
 		42F1727622011DF4000BEF98 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		42F1727722011DF4000BEF98 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +184,29 @@
 				4291F0302206CC8E00A867E6 /* FlightSearchInteractor.swift */,
 			);
 			path = FlightSearch;
+			sourceTree = "<group>";
+		};
+		42D3C62C220D286300658C34 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				42D3C641220D360800658C34 /* cells */,
+				42D3C62D220D288600658C34 /* ResultInterfaces.swift */,
+				42D3C62F220D288600658C34 /* ResultPresenter.swift */,
+				42D3C630220D288600658C34 /* ResultViewController.swift */,
+				42D3C632220D288600658C34 /* ResultModel.swift */,
+				42D3C634220D288600658C34 /* ResultViewController.xib */,
+				42D3C635220D288600658C34 /* ResultWireframe.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		42D3C641220D360800658C34 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				42D3C642220D36F500658C34 /* ResultTableViewCell.swift */,
+				42D3C643220D36F500658C34 /* ResultTableViewCell.xib */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 		42F1727322011D88000BEF98 /* Home */ = {
@@ -282,6 +321,7 @@
 		527959C320DC796900D3C13D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				42D3C62C220D286300658C34 /* Result */,
 				42F1727322011D88000BEF98 /* Home */,
 				527959D220DC81B600D3C13D /* BaseRouter */,
 			);
@@ -526,9 +566,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42D3C645220D36F500658C34 /* ResultTableViewCell.xib in Resources */,
 				5279599D20DC78D300D3C13D /* LaunchScreen.storyboard in Resources */,
 				5279599A20DC78D300D3C13D /* Assets.xcassets in Resources */,
 				42F1728522011DF4000BEF98 /* HomeViewController.xib in Resources */,
+				42D3C63E220D288600658C34 /* ResultViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,26 +691,32 @@
 				4291F0312206CC8E00A867E6 /* FlightSearchInteractor.swift in Sources */,
 				527959D620DC820900D3C13D /* BaseNavigationController.swift in Sources */,
 				4291F02C2206C16100A867E6 /* FlightSearch.swift in Sources */,
+				42D3C637220D288600658C34 /* ResultInterfaces.swift in Sources */,
 				527959D020DC803C00D3C13D /* ViewInterface.swift in Sources */,
 				524AF9FB20DD1AB5005D4CEC /* FlightSearchApiModelProtocol.swift in Sources */,
 				527959CF20DC803C00D3C13D /* PresenterInterface.swift in Sources */,
 				4291F02F2206CC8100A867E6 /* FlightSearchInteractorProtocol.swift in Sources */,
+				42D3C63C220D288600658C34 /* ResultModel.swift in Sources */,
 				4291F0292206BD5000A867E6 /* Keys.swift in Sources */,
 				527959D420DC81C200D3C13D /* BaseRouter.swift in Sources */,
 				527959CE20DC803C00D3C13D /* InteractorInterface.swift in Sources */,
 				527959F020DC8E0700D3C13D /* FlightSearchApiProtocol.swift in Sources */,
 				527959D120DC803C00D3C13D /* BaseWireframe.swift in Sources */,
 				527959FB20DD06D500D3C13D /* FlightSearchApiModel.swift in Sources */,
+				42D3C63F220D288600658C34 /* ResultWireframe.swift in Sources */,
 				527959EE20DC8BD500D3C13D /* FlightSearchApiProvider.swift in Sources */,
 				527959E820DC898400D3C13D /* BaseProvider.swift in Sources */,
+				42D3C639220D288600658C34 /* ResultPresenter.swift in Sources */,
 				42F1727E22011DF4000BEF98 /* HomeInterfaces.swift in Sources */,
 				42F1728622011DF4000BEF98 /* HomeWireframe.swift in Sources */,
 				42F66A9D22069D84008524D3 /* FSButton.swift in Sources */,
 				42F1728022011DF4000BEF98 /* HomePresenter.swift in Sources */,
 				42F1728122011DF4000BEF98 /* HomeViewController.swift in Sources */,
+				42D3C63A220D288600658C34 /* ResultViewController.swift in Sources */,
 				527959F820DD064B00D3C13D /* BaseResponse.swift in Sources */,
 				527959EC20DC8B1900D3C13D /* String.swift in Sources */,
 				5279599020DC78CF00D3C13D /* AppDelegate.swift in Sources */,
+				42D3C644220D36F500658C34 /* ResultTableViewCell.swift in Sources */,
 				42F1728C220141E7000BEF98 /* FSTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

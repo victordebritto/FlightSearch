@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -28,11 +28,11 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2tu-ls-RVn">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="9bN-Rt-25p">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="9bN-Rt-25p">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
                         </imageView>
                     </subviews>
-                    <color key="backgroundColor" red="0.10196078431372549" green="0.73725490196078436" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.094117647058823528" green="0.61176470588235299" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="9bN-Rt-25p" secondAttribute="trailing" id="Bnm-yC-sQf"/>
                         <constraint firstAttribute="bottom" secondItem="9bN-Rt-25p" secondAttribute="bottom" id="Qsj-Ux-eD6"/>
@@ -41,95 +41,122 @@
                         <constraint firstItem="9bN-Rt-25p" firstAttribute="top" secondItem="2tu-ls-RVn" secondAttribute="top" id="ocx-cy-gef"/>
                     </constraints>
                 </view>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Axv-Dv-y42">
-                    <rect key="frame" x="19" y="158" width="376" height="350"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wec-i1-NwL">
+                    <rect key="frame" x="0.0" y="158" width="414" height="704"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="IATA Origem" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tyn-j9-JDi" customClass="FSTextField" customModule="FlightSearch" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="376" height="54"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="54" id="4Fg-oa-m7c"/>
-                            </constraints>
-                            <nil key="textColor"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="image" keyPath="icon" value="pin"/>
-                                <userDefinedRuntimeAttribute type="number" keyPath="shadowSize">
-                                    <integer key="value" value="2"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
-                        </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="IATA Destino" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SLi-mS-Kfg" customClass="FSTextField" customModule="FlightSearch" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="74" width="376" height="54"/>
-                            <nil key="textColor"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="image" keyPath="icon" value="pin"/>
-                            </userDefinedRuntimeAttributes>
-                        </textField>
-                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qZg-87-tho">
-                            <rect key="frame" x="0.0" y="148" width="376" height="54"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qmi-HD-zlJ" userLabel="ContentView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="704"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data da ida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AmZ-CF-az7" customClass="FSTextField" customModule="FlightSearch" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="180.5" height="54"/>
-                                    <nil key="textColor"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="image" keyPath="icon" value="calendario"/>
-                                        <userDefinedRuntimeAttribute type="string" keyPath="digitMask" value="##/##/####"/>
-                                    </userDefinedRuntimeAttributes>
-                                </textField>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data da volta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MSW-hZ-nH3" customClass="FSTextField" customModule="FlightSearch" customModuleProvider="target">
-                                    <rect key="frame" x="195.5" y="0.0" width="180.5" height="54"/>
-                                    <nil key="textColor"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="image" keyPath="icon" value="calendario"/>
-                                        <userDefinedRuntimeAttribute type="string" keyPath="digitMask" value="##/##/####"/>
-                                    </userDefinedRuntimeAttributes>
-                                </textField>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Axv-Dv-y42">
+                                    <rect key="frame" x="16" y="0.0" width="382" height="350"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="IATA Origem" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tyn-j9-JDi" customClass="FSTextField" customModule="FlightSearch" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="54"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="54" id="4Fg-oa-m7c"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="icon" value="pin"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowSize">
+                                                    <integer key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="IATA Destino" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SLi-mS-Kfg" customClass="FSTextField" customModule="FlightSearch" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="74" width="382" height="54"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="icon" value="pin"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qZg-87-tho">
+                                            <rect key="frame" x="0.0" y="148" width="382" height="54"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data da ida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AmZ-CF-az7" customClass="FSTextField" customModule="FlightSearch" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="183.5" height="54"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="icon" value="calendario"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="digitMask" value="##/##/####"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data da volta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MSW-hZ-nH3" customClass="FSTextField" customModule="FlightSearch" customModuleProvider="target">
+                                                    <rect key="frame" x="198.5" y="0.0" width="183.5" height="54"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="icon" value="calendario"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="digitMask" value="##/##/####"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantidade de passageiros" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2eC-Gy-jc8" customClass="FSTextField" customModule="FlightSearch" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="222" width="382" height="54"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="icon" value="passageiros"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ej2-8C-LKO" customClass="FSButton" customModule="FlightSearch" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="296" width="382" height="54"/>
+                                            <color key="backgroundColor" red="0.10196078431372549" green="0.73725490196078436" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" title="Pesquisar passagem" image="lupa">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <real key="value" value="4"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="search:" destination="-1" eventType="touchUpInside" id="6H8-Oz-Cyt"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
                             </subviews>
-                        </stackView>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantidade de passageiros" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2eC-Gy-jc8" customClass="FSTextField" customModule="FlightSearch" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="222" width="376" height="54"/>
-                            <nil key="textColor"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="image" keyPath="icon" value="passageiros"/>
-                            </userDefinedRuntimeAttributes>
-                        </textField>
-                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ej2-8C-LKO" customClass="FSButton" customModule="FlightSearch" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="296" width="376" height="54"/>
-                            <color key="backgroundColor" red="0.10196078431372549" green="0.73725490196078436" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="Pesquisar passagem" image="lupa">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </state>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                    <real key="value" value="4"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
-                            <connections>
-                                <action selector="search:" destination="-1" eventType="touchUpInside" id="6H8-Oz-Cyt"/>
-                            </connections>
-                        </button>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Axv-Dv-y42" secondAttribute="trailing" constant="16" id="dvs-WC-qEH"/>
+                                <constraint firstItem="Axv-Dv-y42" firstAttribute="leading" secondItem="qmi-HD-zlJ" secondAttribute="leading" constant="16" id="rfU-qE-HOK"/>
+                                <constraint firstItem="Axv-Dv-y42" firstAttribute="top" secondItem="qmi-HD-zlJ" secondAttribute="top" id="sw6-fq-b16"/>
+                            </constraints>
+                        </view>
                     </subviews>
-                </stackView>
+                    <color key="backgroundColor" red="0.92941176469999998" green="0.95294117649999999" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="qmi-HD-zlJ" firstAttribute="width" secondItem="Wec-i1-NwL" secondAttribute="width" id="PbB-kZ-nhl"/>
+                        <constraint firstItem="qmi-HD-zlJ" firstAttribute="top" secondItem="Wec-i1-NwL" secondAttribute="top" id="baF-R7-42T"/>
+                        <constraint firstAttribute="bottomMargin" secondItem="qmi-HD-zlJ" secondAttribute="bottom" id="djT-Uh-mXO"/>
+                        <constraint firstItem="qmi-HD-zlJ" firstAttribute="leading" secondItem="Wec-i1-NwL" secondAttribute="leading" id="n2c-7H-IOz"/>
+                        <constraint firstItem="qmi-HD-zlJ" firstAttribute="height" secondItem="Wec-i1-NwL" secondAttribute="height" priority="250" id="oJp-WU-dsy"/>
+                        <constraint firstAttribute="trailing" secondItem="qmi-HD-zlJ" secondAttribute="trailing" id="t4Z-uc-wge"/>
+                    </constraints>
+                </scrollView>
             </subviews>
             <color key="backgroundColor" red="0.92941176470588238" green="0.95294117647058818" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Axv-Dv-y42" firstAttribute="leading" secondItem="Et9-Dx-DVY" secondAttribute="leading" constant="19" id="1DK-k2-vpb"/>
                 <constraint firstItem="2tu-ls-RVn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HRi-0T-xRS"/>
                 <constraint firstItem="2tu-ls-RVn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="MfN-LQ-pab"/>
                 <constraint firstAttribute="trailing" secondItem="2tu-ls-RVn" secondAttribute="trailing" id="Pke-w3-vUo"/>
-                <constraint firstItem="Et9-Dx-DVY" firstAttribute="trailing" secondItem="Axv-Dv-y42" secondAttribute="trailing" constant="19" id="SwU-nh-ZdC"/>
-                <constraint firstItem="Axv-Dv-y42" firstAttribute="top" secondItem="2tu-ls-RVn" secondAttribute="bottom" constant="20" id="zya-Jp-42j"/>
+                <constraint firstItem="Wec-i1-NwL" firstAttribute="trailing" secondItem="Et9-Dx-DVY" secondAttribute="trailing" id="lJv-RZ-6x2"/>
+                <constraint firstItem="Et9-Dx-DVY" firstAttribute="bottom" secondItem="Wec-i1-NwL" secondAttribute="bottom" id="pem-pQ-yZr"/>
+                <constraint firstItem="Et9-Dx-DVY" firstAttribute="leading" secondItem="Wec-i1-NwL" secondAttribute="leading" id="qnv-qg-wjI"/>
+                <constraint firstItem="2tu-ls-RVn" firstAttribute="baseline" secondItem="Wec-i1-NwL" secondAttribute="firstBaseline" constant="-20" id="zHN-u7-J0q"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Et9-Dx-DVY"/>
+            <point key="canvasLocation" x="50.724637681159422" y="35.491071428571423"/>
         </view>
     </objects>
     <resources>
