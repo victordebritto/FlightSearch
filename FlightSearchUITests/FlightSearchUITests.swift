@@ -10,9 +10,5 @@ import XCTest
 
 class FlightSearchUITests: MainUITests {
   
-  func testNoResult() {
-    sendKeySearchBar(id: "home_search_bar_element", text: "Belo Horizonte")
-    searchButton()
-  }
   
 }

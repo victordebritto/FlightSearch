@@ -7,6 +7,9 @@
 //
 
 import Foundation
+import Alamofire
+import ObjectMapper
+import AlamofireObjectMapper
 
 enum FlightSearchApiProvider {
   
@@ -29,16 +32,28 @@ enum FlightSearchApiProvider {
     }
   }
   
+  fileprivate static let kURL = "http://developer.goibibo.com/api%@"
+  
 }
 
 // MARK: - Extensions
 extension FlightSearchApiProvider: FlightSearchApiProtocol {
-  func getSome(params: [String: Any], success: @escaping BaseSuccessCallback, failure: @escaping BaseFailureCallback) {
+  func getSome(params: [String: Any], success: @escaping flightSearchCallback, failure: @escaping BaseFailureCallback) {
     
-    BaseProvider().request(method: method, endPoint: endPoint, params: params, successBlock: { response in
-      success(response)
-    }) { error in
-      failure(error)
+    let completeEndPoint = FlightSearchApiProvider.kURL.format(endPoint)
+    let url = completeEndPoint.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+    let urlString = URL(string: url)
+    if let url = urlString {
+      Alamofire
+        .request(url, method: .get, parameters: params)
+        .responseObject(completionHandler: { (response: DataResponse<ResultSearch>) in
+          if let err = response.result.value?.data?.error {
+            let objError = NSError(domain: "api", code: 200, userInfo: [NSLocalizedDescriptionKey : err])
+            failure(objError)
+          } else {
+            success(response.result.value?.data?.onwardFlights ?? [])
+          }
+        })
     }
   }
   

@@ -48,7 +48,16 @@ internal class BaseProvider {
       if let url = urlString {
         
         
-        
+        Alamofire
+          .request(url, method: .get, parameters: params)
+          .responseObject(completionHandler: { (response: DataResponse<ResultSearch>) in
+            if let err = response.result.value?.data?.error {
+              let objError = NSError(domain: "api", code: 200, userInfo: [NSLocalizedDescriptionKey : err])
+              failureBlock(objError)
+            } else {
+              successBlock(response.result.value?.data?.onwardFlights as AnyObject)
+            }
+          })
         
         Alamofire.request(url, method: .get, parameters: params)
           .validate(statusCode: 200..<300)

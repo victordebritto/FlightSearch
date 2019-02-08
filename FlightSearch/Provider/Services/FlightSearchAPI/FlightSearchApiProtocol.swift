@@ -8,8 +8,10 @@
 
 import Foundation
 
+typealias flightSearchCallback = (_ FlightSearch: [Flight]) -> Swift.Void
+
 protocol FlightSearchApiProtocol {
   func getSome(params: [String: Any],
-               success: @escaping BaseSuccessCallback,
+               success: @escaping flightSearchCallback,
                failure: @escaping BaseFailureCallback)
 }

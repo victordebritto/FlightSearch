@@ -27,6 +27,9 @@
 		42D3C674220D4DE700658C34 /* ResultSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3C670220D4DE700658C34 /* ResultSearch.swift */; };
 		42D3C676220D4DE700658C34 /* Fare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3C672220D4DE700658C34 /* Fare.swift */; };
 		42D3C678220D503400658C34 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3C677220D503400658C34 /* DateHelper.swift */; };
+		42D3C67A220D550200658C34 /* FlightSearchApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3C679220D550200658C34 /* FlightSearchApiTests.swift */; };
+		42D3C67D220D553400658C34 /* FlightSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3C67B220D553400658C34 /* FlightSearchUITests.swift */; };
+		42D3C67E220D553400658C34 /* MainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3C67C220D553400658C34 /* MainUITests.swift */; };
 		42F1727E22011DF4000BEF98 /* HomeInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F1727422011DF4000BEF98 /* HomeInterfaces.swift */; };
 		42F1728022011DF4000BEF98 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F1727622011DF4000BEF98 /* HomePresenter.swift */; };
 		42F1728122011DF4000BEF98 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F1727722011DF4000BEF98 /* HomeViewController.swift */; };
@@ -96,6 +99,9 @@
 		42D3C670220D4DE700658C34 /* ResultSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultSearch.swift; sourceTree = "<group>"; };
 		42D3C672220D4DE700658C34 /* Fare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fare.swift; sourceTree = "<group>"; };
 		42D3C677220D503400658C34 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		42D3C679220D550200658C34 /* FlightSearchApiTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightSearchApiTests.swift; sourceTree = "<group>"; };
+		42D3C67B220D553400658C34 /* FlightSearchUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightSearchUITests.swift; sourceTree = "<group>"; };
+		42D3C67C220D553400658C34 /* MainUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainUITests.swift; sourceTree = "<group>"; };
 		42F1727422011DF4000BEF98 /* HomeInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInterfaces.swift; sourceTree = "<group>"; };
 		42F1727622011DF4000BEF98 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		42F1727722011DF4000BEF98 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -316,6 +322,7 @@
 		527959A620DC78D400D3C13D /* FlightSearchTests */ = {
 			isa = PBXGroup;
 			children = (
+				42D3C679220D550200658C34 /* FlightSearchApiTests.swift */,
 				527959A920DC78D400D3C13D /* Info.plist */,
 			);
 			path = FlightSearchTests;
@@ -324,6 +331,8 @@
 		527959B120DC78D400D3C13D /* FlightSearchUITests */ = {
 			isa = PBXGroup;
 			children = (
+				42D3C67B220D553400658C34 /* FlightSearchUITests.swift */,
+				42D3C67C220D553400658C34 /* MainUITests.swift */,
 				527959B420DC78D400D3C13D /* Info.plist */,
 			);
 			path = FlightSearchUITests;
@@ -572,10 +581,12 @@
 					};
 					527959A220DC78D400D3C13D = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 5279598B20DC78CF00D3C13D;
 					};
 					527959AD20DC78D400D3C13D = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 5279598B20DC78CF00D3C13D;
 					};
 				};
@@ -776,6 +787,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42D3C67A220D550200658C34 /* FlightSearchApiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -783,6 +795,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42D3C67E220D553400658C34 /* MainUITests.swift in Sources */,
+				42D3C67D220D553400658C34 /* FlightSearchUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -971,6 +985,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XN3A73TYGD;
 				INFOPLIST_FILE = FlightSearchTests/Info.plist;
@@ -981,6 +996,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.victorbritto.FlightSearchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlightSearch.app/FlightSearch";
@@ -993,6 +1009,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XN3A73TYGD;
 				INFOPLIST_FILE = FlightSearchTests/Info.plist;
@@ -1014,6 +1031,7 @@
 			baseConfigurationReference = 25500911437FE6D10F2909EC /* Pods-FlightSearchUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XN3A73TYGD;
 				INFOPLIST_FILE = FlightSearchUITests/Info.plist;
@@ -1024,6 +1042,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.victorbritto.FlightSearchUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = FlightSearch;
@@ -1035,6 +1054,7 @@
 			baseConfigurationReference = 3C32A66DCE4AC7FC2995883A /* Pods-FlightSearchUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XN3A73TYGD;
 				INFOPLIST_FILE = FlightSearchUITests/Info.plist;
