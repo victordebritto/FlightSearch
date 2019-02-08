@@ -28,17 +28,19 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2tu-ls-RVn">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="9bN-Rt-25p">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="dsp-4e-1CM">
+                            <rect key="frame" x="154.5" y="53.5" width="105" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="31" id="SAO-VI-r6d"/>
+                                <constraint firstAttribute="width" constant="105" id="xSB-f5-ySo"/>
+                            </constraints>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" red="0.094117647058823528" green="0.61176470588235299" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="9bN-Rt-25p" secondAttribute="trailing" id="Bnm-yC-sQf"/>
-                        <constraint firstAttribute="bottom" secondItem="9bN-Rt-25p" secondAttribute="bottom" id="Qsj-Ux-eD6"/>
-                        <constraint firstItem="9bN-Rt-25p" firstAttribute="leading" secondItem="2tu-ls-RVn" secondAttribute="leading" id="WZ4-nw-bWn"/>
+                        <constraint firstItem="dsp-4e-1CM" firstAttribute="centerY" secondItem="2tu-ls-RVn" secondAttribute="centerY" id="FCy-5b-imE"/>
+                        <constraint firstItem="dsp-4e-1CM" firstAttribute="centerX" secondItem="2tu-ls-RVn" secondAttribute="centerX" id="RpI-m1-j4l"/>
                         <constraint firstAttribute="height" constant="138" id="gC5-vP-qjo"/>
-                        <constraint firstItem="9bN-Rt-25p" firstAttribute="top" secondItem="2tu-ls-RVn" secondAttribute="top" id="ocx-cy-gef"/>
                     </constraints>
                 </view>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wec-i1-NwL">
@@ -160,8 +162,8 @@
         </view>
     </objects>
     <resources>
-        <image name="banner" width="375" height="138"/>
         <image name="calendario" width="22" height="19"/>
+        <image name="logo" width="105" height="31"/>
         <image name="lupa" width="13" height="13"/>
         <image name="passageiros" width="22" height="19"/>
         <image name="pin" width="22" height="19"/>

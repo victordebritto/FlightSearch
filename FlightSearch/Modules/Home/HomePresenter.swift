@@ -36,13 +36,12 @@ extension HomePresenter: HomePresenterInterface {
        let arrival = dateOfArrival.date(withFormat: "dd/MM/yyyy"),
        let adults = Int(countPeople) {
       
-      let parameters = FlightSearch(source: iataSource,
-                                    destination: iataDestination,
-                                    dateofdeparture:  departure,
-                                    dateofarrival: arrival,
-                                    adults: adults)
-      
-      interactorSearch.search(parameters: parameters)
+      let parameters = FlightSearch(JSON: ["source": iataSource,
+                                          "destination": iataDestination,
+                                          "dateofdeparture":  departure,
+                                          "dateofarrival": arrival,
+                                          "adults": adults])
+      interactorSearch.search(parameters: parameters ?? FlightSearch())
     }
   }
 }

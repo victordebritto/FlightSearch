@@ -8,6 +8,8 @@
 
 import Foundation
 import Alamofire
+import ObjectMapper
+import AlamofireObjectMapper
 
 typealias BaseSuccessCallback = (_ data: AnyObject?) -> Swift.Void
 typealias BaseFailureCallback = (_ error: Error?) -> Swift.Void
@@ -44,6 +46,10 @@ internal class BaseProvider {
     switch method {
     case .get:
       if let url = urlString {
+        
+        
+        
+        
         Alamofire.request(url, method: .get, parameters: params)
           .validate(statusCode: 200..<300)
           .validate(contentType: ["application/json"])

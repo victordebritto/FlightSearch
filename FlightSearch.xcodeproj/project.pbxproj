@@ -19,6 +19,14 @@
 		42D3C63F220D288600658C34 /* ResultWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3C635220D288600658C34 /* ResultWireframe.swift */; };
 		42D3C644220D36F500658C34 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3C642220D36F500658C34 /* ResultTableViewCell.swift */; };
 		42D3C645220D36F500658C34 /* ResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D3C643220D36F500658C34 /* ResultTableViewCell.xib */; };
+		42D3C65B220D461F00658C34 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42D3C649220D461F00658C34 /* Montserrat-Medium.ttf */; };
+		42D3C661220D461F00658C34 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42D3C64F220D461F00658C34 /* Montserrat-Bold.ttf */; };
+		42D3C668220D461F00658C34 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42D3C656220D461F00658C34 /* Montserrat-Regular.ttf */; };
+		42D3C66D220D4D0500658C34 /* FlightResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3C66C220D4D0500658C34 /* FlightResult.swift */; };
+		42D3C673220D4DE700658C34 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3C66F220D4DE700658C34 /* Flight.swift */; };
+		42D3C674220D4DE700658C34 /* ResultSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3C670220D4DE700658C34 /* ResultSearch.swift */; };
+		42D3C676220D4DE700658C34 /* Fare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3C672220D4DE700658C34 /* Fare.swift */; };
+		42D3C678220D503400658C34 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3C677220D503400658C34 /* DateHelper.swift */; };
 		42F1727E22011DF4000BEF98 /* HomeInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F1727422011DF4000BEF98 /* HomeInterfaces.swift */; };
 		42F1728022011DF4000BEF98 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F1727622011DF4000BEF98 /* HomePresenter.swift */; };
 		42F1728122011DF4000BEF98 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F1727722011DF4000BEF98 /* HomeViewController.swift */; };
@@ -26,13 +34,10 @@
 		42F1728622011DF4000BEF98 /* HomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F1727C22011DF4000BEF98 /* HomeWireframe.swift */; };
 		42F1728C220141E7000BEF98 /* FSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F1728B220141E7000BEF98 /* FSTextField.swift */; };
 		42F66A9D22069D84008524D3 /* FSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F66A9C22069D84008524D3 /* FSButton.swift */; };
-		52044D8020E0431C00D6C94C /* MainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52044D7F20E0431C00D6C94C /* MainUITests.swift */; };
 		524AF9FB20DD1AB5005D4CEC /* FlightSearchApiModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524AF9FA20DD1AB5005D4CEC /* FlightSearchApiModelProtocol.swift */; };
 		5279599020DC78CF00D3C13D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5279598F20DC78CF00D3C13D /* AppDelegate.swift */; };
 		5279599A20DC78D300D3C13D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5279599920DC78D300D3C13D /* Assets.xcassets */; };
 		5279599D20DC78D300D3C13D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5279599B20DC78D300D3C13D /* LaunchScreen.storyboard */; };
-		527959A820DC78D400D3C13D /* FlightSearchApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527959A720DC78D400D3C13D /* FlightSearchApiTests.swift */; };
-		527959B320DC78D400D3C13D /* FlightSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527959B220DC78D400D3C13D /* FlightSearchUITests.swift */; };
 		527959CE20DC803C00D3C13D /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527959CA20DC803C00D3C13D /* InteractorInterface.swift */; };
 		527959CF20DC803C00D3C13D /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527959CB20DC803C00D3C13D /* PresenterInterface.swift */; };
 		527959D020DC803C00D3C13D /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527959CC20DC803C00D3C13D /* ViewInterface.swift */; };
@@ -83,6 +88,14 @@
 		42D3C635220D288600658C34 /* ResultWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultWireframe.swift; sourceTree = "<group>"; };
 		42D3C642220D36F500658C34 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
 		42D3C643220D36F500658C34 /* ResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultTableViewCell.xib; sourceTree = "<group>"; };
+		42D3C649220D461F00658C34 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		42D3C64F220D461F00658C34 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		42D3C656220D461F00658C34 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		42D3C66C220D4D0500658C34 /* FlightResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightResult.swift; sourceTree = "<group>"; };
+		42D3C66F220D4DE700658C34 /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		42D3C670220D4DE700658C34 /* ResultSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultSearch.swift; sourceTree = "<group>"; };
+		42D3C672220D4DE700658C34 /* Fare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fare.swift; sourceTree = "<group>"; };
+		42D3C677220D503400658C34 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		42F1727422011DF4000BEF98 /* HomeInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInterfaces.swift; sourceTree = "<group>"; };
 		42F1727622011DF4000BEF98 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		42F1727722011DF4000BEF98 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -91,7 +104,6 @@
 		42F1728B220141E7000BEF98 /* FSTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTextField.swift; sourceTree = "<group>"; };
 		42F66A9C22069D84008524D3 /* FSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSButton.swift; sourceTree = "<group>"; };
 		49E107B26361FFC634A9E394 /* Pods-FlightSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlightSearch.debug.xcconfig"; path = "Target Support Files/Pods-FlightSearch/Pods-FlightSearch.debug.xcconfig"; sourceTree = "<group>"; };
-		52044D7F20E0431C00D6C94C /* MainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUITests.swift; sourceTree = "<group>"; };
 		524AF9FA20DD1AB5005D4CEC /* FlightSearchApiModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchApiModelProtocol.swift; sourceTree = "<group>"; };
 		5279598C20DC78CF00D3C13D /* FlightSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5279598F20DC78CF00D3C13D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,10 +111,8 @@
 		5279599C20DC78D300D3C13D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5279599E20DC78D300D3C13D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		527959A320DC78D400D3C13D /* FlightSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		527959A720DC78D400D3C13D /* FlightSearchApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchApiTests.swift; sourceTree = "<group>"; };
 		527959A920DC78D400D3C13D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		527959AE20DC78D400D3C13D /* FlightSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		527959B220DC78D400D3C13D /* FlightSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchUITests.swift; sourceTree = "<group>"; };
 		527959B420DC78D400D3C13D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		527959CA20DC803C00D3C13D /* InteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
 		527959CB20DC803C00D3C13D /* PresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
@@ -173,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				4291F02B2206C16100A867E6 /* FlightSearch.swift */,
+				42D3C66C220D4D0500658C34 /* FlightResult.swift */,
 			);
 			path = FlightSearch;
 			sourceTree = "<group>";
@@ -207,6 +218,34 @@
 				42D3C643220D36F500658C34 /* ResultTableViewCell.xib */,
 			);
 			path = cells;
+			sourceTree = "<group>";
+		};
+		42D3C646220D461F00658C34 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				42D3C647220D461F00658C34 /* Montserrat */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		42D3C647220D461F00658C34 /* Montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				42D3C649220D461F00658C34 /* Montserrat-Medium.ttf */,
+				42D3C64F220D461F00658C34 /* Montserrat-Bold.ttf */,
+				42D3C656220D461F00658C34 /* Montserrat-Regular.ttf */,
+			);
+			path = Montserrat;
+			sourceTree = "<group>";
+		};
+		42D3C66E220D4DE700658C34 /* Flight */ = {
+			isa = PBXGroup;
+			children = (
+				42D3C66F220D4DE700658C34 /* Flight.swift */,
+				42D3C670220D4DE700658C34 /* ResultSearch.swift */,
+				42D3C672220D4DE700658C34 /* Fare.swift */,
+			);
+			path = Flight;
 			sourceTree = "<group>";
 		};
 		42F1727322011D88000BEF98 /* Home */ = {
@@ -277,7 +316,6 @@
 		527959A620DC78D400D3C13D /* FlightSearchTests */ = {
 			isa = PBXGroup;
 			children = (
-				527959A720DC78D400D3C13D /* FlightSearchApiTests.swift */,
 				527959A920DC78D400D3C13D /* Info.plist */,
 			);
 			path = FlightSearchTests;
@@ -286,8 +324,6 @@
 		527959B120DC78D400D3C13D /* FlightSearchUITests */ = {
 			isa = PBXGroup;
 			children = (
-				52044D7F20E0431C00D6C94C /* MainUITests.swift */,
-				527959B220DC78D400D3C13D /* FlightSearchUITests.swift */,
 				527959B420DC78D400D3C13D /* Info.plist */,
 			);
 			path = FlightSearchUITests;
@@ -331,6 +367,7 @@
 		527959C420DC798400D3C13D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				42D3C646220D461F00658C34 /* Fonts */,
 				5279599920DC78D300D3C13D /* Assets.xcassets */,
 				5279599B20DC78D300D3C13D /* LaunchScreen.storyboard */,
 			);
@@ -340,6 +377,7 @@
 		527959C520DC7B1E00D3C13D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				42D3C66E220D4DE700658C34 /* Flight */,
 				4291F02A2206C14400A867E6 /* FlightSearch */,
 				527959F920DD06C000D3C13D /* FlightSearchAPIModel */,
 				527959F620DD063300D3C13D /* Base */,
@@ -424,6 +462,7 @@
 			isa = PBXGroup;
 			children = (
 				527959EB20DC8B1900D3C13D /* String.swift */,
+				42D3C677220D503400658C34 /* DateHelper.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -568,6 +607,9 @@
 			files = (
 				42D3C645220D36F500658C34 /* ResultTableViewCell.xib in Resources */,
 				5279599D20DC78D300D3C13D /* LaunchScreen.storyboard in Resources */,
+				42D3C661220D461F00658C34 /* Montserrat-Bold.ttf in Resources */,
+				42D3C668220D461F00658C34 /* Montserrat-Regular.ttf in Resources */,
+				42D3C65B220D461F00658C34 /* Montserrat-Medium.ttf in Resources */,
 				5279599A20DC78D300D3C13D /* Assets.xcassets in Resources */,
 				42F1728522011DF4000BEF98 /* HomeViewController.xib in Resources */,
 				42D3C63E220D288600658C34 /* ResultViewController.xib in Resources */,
@@ -601,14 +643,18 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FlightSearch/Pods-FlightSearch-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -688,15 +734,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42D3C674220D4DE700658C34 /* ResultSearch.swift in Sources */,
 				4291F0312206CC8E00A867E6 /* FlightSearchInteractor.swift in Sources */,
 				527959D620DC820900D3C13D /* BaseNavigationController.swift in Sources */,
 				4291F02C2206C16100A867E6 /* FlightSearch.swift in Sources */,
 				42D3C637220D288600658C34 /* ResultInterfaces.swift in Sources */,
+				42D3C678220D503400658C34 /* DateHelper.swift in Sources */,
 				527959D020DC803C00D3C13D /* ViewInterface.swift in Sources */,
+				42D3C673220D4DE700658C34 /* Flight.swift in Sources */,
 				524AF9FB20DD1AB5005D4CEC /* FlightSearchApiModelProtocol.swift in Sources */,
 				527959CF20DC803C00D3C13D /* PresenterInterface.swift in Sources */,
 				4291F02F2206CC8100A867E6 /* FlightSearchInteractorProtocol.swift in Sources */,
 				42D3C63C220D288600658C34 /* ResultModel.swift in Sources */,
+				42D3C676220D4DE700658C34 /* Fare.swift in Sources */,
 				4291F0292206BD5000A867E6 /* Keys.swift in Sources */,
 				527959D420DC81C200D3C13D /* BaseRouter.swift in Sources */,
 				527959CE20DC803C00D3C13D /* InteractorInterface.swift in Sources */,
@@ -716,6 +766,7 @@
 				527959F820DD064B00D3C13D /* BaseResponse.swift in Sources */,
 				527959EC20DC8B1900D3C13D /* String.swift in Sources */,
 				5279599020DC78CF00D3C13D /* AppDelegate.swift in Sources */,
+				42D3C66D220D4D0500658C34 /* FlightResult.swift in Sources */,
 				42D3C644220D36F500658C34 /* ResultTableViewCell.swift in Sources */,
 				42F1728C220141E7000BEF98 /* FSTextField.swift in Sources */,
 			);
@@ -725,7 +776,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				527959A820DC78D400D3C13D /* FlightSearchApiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,8 +783,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52044D8020E0431C00D6C94C /* MainUITests.swift in Sources */,
-				527959B320DC78D400D3C13D /* FlightSearchUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

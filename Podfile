@@ -5,6 +5,7 @@ target 'FlightSearch' do
   
   # Pods for FlightSearch
   pod 'Alamofire', '~> 4.7'
+  pod 'AlamofireObjectMapper', '~> 5.0'
   pod 'IQKeyboardManagerSwift', '5.0.0'
 
 

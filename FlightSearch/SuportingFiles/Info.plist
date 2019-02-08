@@ -58,6 +58,12 @@
 	</array>
 	<key>app_key</key>
 	<string>4fb01a9a1589bafd596ed24cbf4b834b</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Montserrat-Medium.ttf</string>
+		<string>Montserrat-Bold.ttf</string>
+		<string>Montserrat-Regular.ttf</string>
+	</array>
 	<key>app_id</key>
 	<string>5af5467c</string>
 </dict>

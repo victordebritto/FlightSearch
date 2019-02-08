@@ -20,6 +20,6 @@ final class FlightSearchInteractor: InteractorInterface {
 
 extension FlightSearchInteractor: FlightSearchInteractorProtocol {
   func search(parameters: FlightSearch) {
-    provider.getSome(params: parameters.dictionary, success: {response in }, failure: {error in })
+    provider.getSome(params: parameters.toJSON(), success: {response in }, failure: {error in })
   }
 }

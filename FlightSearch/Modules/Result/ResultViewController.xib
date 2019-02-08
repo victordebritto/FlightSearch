@@ -10,6 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
         <array key="Montserrat-Medium.ttf">
             <string>Montserrat-Medium</string>
         </array>
@@ -73,9 +76,36 @@
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBV-8e-PgU" userLabel="View Footer">
                     <rect key="frame" x="0.0" y="627" width="375" height="40"/>
-                    <color key="backgroundColor" red="0.98340339470000004" green="0.88331088310000005" blue="0.039929247389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="cZJ-xe-2nx">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaZ-DN-kDz" customClass="FSButton" customModule="FlightSearch" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="186" height="40"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="12"/>
+                                    <state key="normal" title="Filtrar" image="filtro">
+                                        <color key="titleColor" red="0.49411764705882355" green="0.53333333333333333" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTB-Mz-6rv" customClass="FSButton" customModule="FlightSearch" customModuleProvider="target">
+                                    <rect key="frame" x="189" y="0.0" width="186" height="40"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="12"/>
+                                    <state key="normal" title="Ordernar" image="ordenar">
+                                        <color key="titleColor" red="0.52941176469999995" green="0.57647058819999997" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.84705882352941175" green="0.86274509803921573" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="F5Y-8X-LuT"/>
+                        <constraint firstAttribute="trailing" secondItem="cZJ-xe-2nx" secondAttribute="trailing" id="GQG-5X-NEh"/>
+                        <constraint firstItem="cZJ-xe-2nx" firstAttribute="leading" secondItem="EBV-8e-PgU" secondAttribute="leading" id="lus-Q4-tJe"/>
+                        <constraint firstAttribute="bottom" secondItem="cZJ-xe-2nx" secondAttribute="bottom" id="rVj-r8-398"/>
+                        <constraint firstItem="cZJ-xe-2nx" firstAttribute="top" secondItem="EBV-8e-PgU" secondAttribute="top" id="t2s-Gf-v2a"/>
                     </constraints>
                 </view>
             </subviews>
@@ -96,4 +126,8 @@
             <point key="canvasLocation" x="55.200000000000003" y="48.125937031484263"/>
         </view>
     </objects>
+    <resources>
+        <image name="filtro" width="11" height="10"/>
+        <image name="ordenar" width="11" height="11"/>
+    </resources>
 </document>
